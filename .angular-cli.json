@@ -58,7 +58,8 @@
             "../node_modules/tinymce/plugins/imagetools/plugin.js",
 
             "../node_modules/jquery/dist/jquery.min.js",
-            "../node_modules/jquery-ui-dist/jquery-ui.min.js"
+            "../node_modules/jquery-ui-dist/jquery-ui.min.js",
+            "../node_modules/echarts/dist/echarts.js"
         ],
         "environmentSource": "environments/environment.ts",
         "environments": {
