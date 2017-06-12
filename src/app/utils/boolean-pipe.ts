@@ -1,13 +1,17 @@
+/*
+自定义管道
+ */
+
 import {Pipe, PipeTransform} from '@angular/core';
 
 @Pipe({
 	name: 'boolean'
 })
 
-export class BooleanPipe implements PipeTransform { 
+export class BooleanPipe implements PipeTransform {
 	constructor() {}
-	
-	transform(flag: string): string { 
+
+	transform(flag: string): string {
 		return flag==="true" ? "text-danger":"";
 	}
 }

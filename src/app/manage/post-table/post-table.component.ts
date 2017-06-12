@@ -26,7 +26,7 @@ export class PostTableComponent implements OnInit {
         public activeRoute: ActivatedRoute,
         public postTableService: PostTableService
     ) {
-      
+
     }
 
   	ngOnInit() {
@@ -58,11 +58,23 @@ export class PostTableComponent implements OnInit {
       this.router.navigateByUrl("user/write");
     }
 
-    public editPost(event):void{
-        var target = event.currentTarget;
-        var nameAttr = target.attributes.name;
-        var value = nameAttr.nodeValue;
-        console.log("postId>"+value);
+    // public editPost(event):void{
+    //     var target = event.currentTarget;
+    //     var nameAttr = target.attributes.id;
+    //     var value = nameAttr.nodeValue;
+    //     console.log(target);
+    //     console.log(nameAttr)
+    //     console.log("postId>"+value);
+    // }    
+  
+    public editPost(id):void{
+      console.log(id);
+        // var target = event.currentTarget;
+        // var nameAttr = target.attributes.id;
+        // var value = nameAttr.nodeValue;
+        // console.log(target);
+        // console.log(nameAttr)
+        // console.log("postId>"+value);
     }
 
     public top(event):void{

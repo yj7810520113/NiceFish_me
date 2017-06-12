@@ -24,6 +24,7 @@ import { GaodeMapComponent } from './map/gaode-map/gaode-map.component';
 import { AmapComponent } from './map/gaode-map/amap/amap.component';
 import { JsplumbDemoComponent } from './jsplumb-demo/jsplumb-demo.component';
 import {appRoutes} from './app.routes';
+import { EchartTestComponent } from './echart-test/echart-test/echart-test.component';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, './assets/i18n', '.json');
@@ -37,11 +38,13 @@ export function createTranslateLoader(http: Http) {
     UserRegisterComponent,
     EqualValidator,
     EChartOptionDirective1,
+    EchartTestComponent,
     ChartComponent,
     UseJqueryComponent,
     AmapComponent,
     GaodeMapComponent,
-    JsplumbDemoComponent
+    JsplumbDemoComponent,
+    EchartTestComponent
   ],
   imports: [
     BrowserModule,
@@ -67,5 +70,5 @@ export function createTranslateLoader(http: Http) {
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  
+
 }

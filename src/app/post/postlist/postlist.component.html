@@ -31,4 +31,5 @@
             <pagination [totalItems]="totalItems" [maxSize]="maxSize" [itemsPerPage]="itemsPerPage" [(ngModel)]="currentPage" firstText="{{'firstPage' | translate}}" lastText="{{'lastPage' | translate}}" previousText="{{'previousPage' | translate}}" nextText="{{'nextPage' | translate}}" [boundaryLinks]="true" [rotate]="false" (pageChanged)="pageChanged($event)" class="pagination-sm"></pagination>
         </div>
     </div>
+  <input placeholder="ngmodel测试" type="text" [(ngModel)]="ngModelTest" (change)="ngModelChangeTest()">
 </div>

@@ -36,7 +36,7 @@
                             <td>{{post.userName}}</td>
                             <td>{{post.postTime}}</td>
                             <td>
-                                <a href="javascript:void(0);" name="{{post.postId}}" (click)="editPost($event)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                <a href="javascript:void(0);" name="{{post.postId}}" (click)="editPost(post.postId)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                                 <a href="javascript:void(0);" name="{{post.postId}}" (click)="unTop($event)"><i class="fa fa-list-ul" aria-hidden="true"></i></a>
                                 <a href="javascript:void(0);" name="{{post.postId}}" (click)="top($event)"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
                                 <a href="javascript:void(0);" name="{{post.postId}}" (click)="delPost($event)"><i class="fa fa-times" aria-hidden="true"></i></a>
